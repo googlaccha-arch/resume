@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surah Al-Fatiha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f172a;
+      color: white;
+    }
+
+    /* --------- Navbar --------- */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      background-color: #0f172a;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    .navbar .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      font-family: Georgia, serif;
+    }
+
+    .navbar nav a {
+      color: white;
+      margin: 0 14px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .navbar nav a:hover {
+      color: #ef4444;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar-right button {
+      background-color: #1e293b;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-btn {
+      background-color: #ef4444;
+      padding: 6px 16px;
+      font-weight: bold;
+    }
+
+    /* --------- Page Content --------- */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .breadcrumb {
+      font-size: 14px;
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    .breadcrumb span {
+      color: #38bdf8;
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .controls button {
+      background-color: #1e293b;
+      color: #cbd5e1;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .surah-info {
+      background-color: #1e293b;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      margin-left: auto;
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #334155;
+    }
+
+    .tabs div {
+      padding: 10px 15px;
+      cursor: pointer;
+      color: #cbd5e1;
+    }
+
+    .tabs .active {
+      border-bottom: 2px solid white;
+      color: white;
+    }
+
+    .ayah-block {
+      border-top: 1px solid #1e293b;
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+       .ayah-arabic {
+      font-size: 30px;
+      direction: rtl;
+      flex: 1;
+      line-height: 2.2em;
+      letter-spacing: 0.7px;
+      font-family: 'Amiri', serif; /* Arabic font added */
+    }
+
+    .ayah-icons {
+      display: flex;
+      gap: 10px;
+      color: #94a3b8;
+      font-size: 14px;
+      align-items: center;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Alim</div>
+    <nav>
+      <a href="#">Qur'an</a>
+      <a href="#">Hadith</a>
+      <a href="#">History</a>
+      <a href="#">Duas</a>
+      <a href="#">Discussions</a>
+    </nav>
+    <div class="navbar-right">
+      <button>🔍</button>
+      <button>⚙️</button>
+      <button>🌞</button>
+      <button>🌙</button>
+      <button class="login-btn">Login</button>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="container">
+    <h1>Surah 97. Al-Qadr</h1>
+    <div class="breadcrumb">
+      Home ➔ <span>Kids Qur'an</span> ➔ <span>97.AL-Qadr</span>
+    </div>
+
+    <div class="controls">
+      <button>▶ Play audio</button>
+      <button>🌐 A↔ع</button>
+      <div class="surah-info">ℹ️ Surah info</div>
+    </div>
+
+    <div class="tabs">
+      <div class="active">Recitation</div>
+      <div>Translation</div>
+    </div>
+
+    <!-- Surah Al-Fatiha -->
+    <div class="ayah-block">
+                  <audio controls>
+  <source src="097.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+          <div class="ayah-arabic"><font color="orange">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ١</font> </div>
+      <div class="ayah-icons">▶ 📑 1:1</div>
+    </div>
+    <div class="ayah-block">
+      <div class="ayah-arabic">إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ ١</div>
+      <div class="ayah-icons">▶ 📑 1:2</div>
+    </div>
+    <div class="ayah-block">
+      <div class="ayah-arabic">وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ ٢</div>
+      <div class="ayah-icons">▶ 📑 1:3</div>
+    </div>
+    <div class="ayah-block">
+      <div class="ayah-arabic">لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ ٣</div>
+      <div class="ayah-icons">▶ 📑 1:4</div>
+    </div>
+    <div class="ayah-block">
+      <div class="ayah-arabic">تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ ٤</div>
+      <div class="ayah-icons">▶ 📑 1:5</div>
+    </div>
+    <div class="ayah-block">
+      <div class="ayah-arabic">سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ ٥</div>
+      <div class="ayah-icons">▶ 📑 1:6</div>
+    </div>
+    <div class="ayah-block">
+  
+    </div>
+  </div>
+</body>
+</html>
